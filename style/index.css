@@ -15,4 +15,5 @@ div.first {
 
 div.second {
     text-align: center;
+    border-style: outset;
 }
