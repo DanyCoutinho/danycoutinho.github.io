@@ -18,6 +18,8 @@
 /* Parágrafos*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* Importar fontes da máquina */
 @font-face {
     font-family: 'love';
@@ -56,34 +58,57 @@ main {
     margin: auto;
 }
 
-p {
-    /* Medidas das fontes */
-    /*
+/*p {
+    Medidas das fontes:
+
     Medidas Absolutas
     cm, mm, in, px, pt, pc
 
     Medidas Relativas
     em, ex, rem, vw, vh, %
 
-    Normalmente
+    Normalmente:
     16px = 1em
     
-    /* ShortHand */
-    /*
+    ShortHand:
     - font-style -> font-weight -> font-size -> font-family
 
+    Configurações complexas:
     font-family: 'Work Sans', Arial, Helvetica, sans-serif;
     font-size: 1em;
     font-weight: normal;
     font-style: italic;
-    */
+    
+    Config Simplificada
     font: italic normal 1em Arial, Helvetica, sans-serif;
-    /* Decorar texto */
-    /* 
+
+    Decorar texto:    
     text-decoration: underline;
-    */
+    
+    Alinhamento do texto:
     text-align: left;
     text-indent: 1em;
+}*/
+
+p#download {
+    text-align: center;
+    color: #141489;
+}
+
+p#download:hover {
+    color: #00ffe5;
+}
+
+p#download::before {
+    content: '📥';
+}
+
+p#download::after {
+    content: '📥';
+}
+
+p#description {
+    font: normal 1em 'Raleway', sans-serif;
 }
 
 h1 {
@@ -106,10 +131,52 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: 'Russo One', serif;
+    font-size: 1.2em;
+    font-weight: 200;
+
+    color: #214da6;
+    text-shadow: 2px 2px 4px #233bb480;
+    text-align: center;
+}
+
+div.blank{
+    display: inline-block;
+    width: 33%;
+}
+
+div#menuprincipal {
+    display: inline-block;
+    width: 33%;
+}
+
+div.menucenter {
+    float: none;
+    display: block;
+    margin: auto;
+}
+
+button {
+    background-color: #e8fdff;
+    border-radius: 10px;
+}
+
+button.menucenter {
+    float: none;
+    display: block;
+    margin: auto;
+}
+
 div#photo {
     display: inline-block;
-    width: 155px;
+    width: 33%;
+}
 
+img.imgcenter{
+    float: none;
+    display: block;
+    margin: auto;
 }
 
 div#photo > p {
@@ -119,6 +186,45 @@ div#photo > p {
 
 div#photo:hover > p {
     display: block;
+}
+
+div.breve {
+    color: #141489;
+    width: 200px;
+}
+
+div.breve:hover {
+    color: #00ffe5;
+}
+
+div.breve > li {
+    display: none;
+}
+
+div.breve:hover > li{
+    display: block;
+}
+
+div.contact {
+    display: inline-block;
+}
+
+a {
+    color: #141489;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0b9ebf;
+}
+
+a:hover {
+    color: #00ffe5;
+}
+
+a:active {
+    color: #141489;
+    background-color: #00ffe5;
 }
 
 /*div.first {
