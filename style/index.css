@@ -1,11 +1,41 @@
 @charset "UTF-8";
 
+/* Selectores personalizados
+    em HTML é id    = em CSS é # (só pode um elemento)
+    em HTML é class = em CSS é . (pode vários elementos)
+    :               = pseudo-class
+    ::              = pseudo-element
+    >               = children
+*/
+
+/* Importar fontes online*/
+/* Destaque */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/* Título */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* Parágrafos*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Importar fontes da máquina */
+@font-face {
+    font-family: 'love';
+    src: url('../fonts/vallenia love.otf') format('opentype'), url('../fonts/vallenia.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+    /* Tipos de format() */
+    /* 
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg
+    */
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-    text-align: center;
 }
 
 body {
@@ -26,10 +56,69 @@ main {
     margin: auto;
 }
 
+p {
+    /* Medidas das fontes */
+    /*
+    Medidas Absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+
+    Normalmente
+    16px = 1em
+    
+    /* ShortHand */
+    /*
+    - font-style -> font-weight -> font-size -> font-family
+
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    */
+    font: italic normal 1em Arial, Helvetica, sans-serif;
+    /* Decorar texto */
+    /* 
+    text-decoration: underline;
+    */
+    text-align: left;
+    text-indent: 1em;
+}
+
 h1 {
-    color: #141489;
+    font-family: 'Parisienne', cursive;
+    font-size: 3em;
+    font-weight: bold;
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(36, 36, 138, 0.6);
+
+    color: #141489;
+    text-shadow: 2px 2px 2px rgba(36, 36, 138, 0.7);
+}
+
+h2 {
+    font-family: 'Russo One', serif;
+    font-size: 1.7em;
+    font-weight: 400;
+
+    color: #233ab4;
+    text-shadow: 2px 2px 2px #233bb480;
+    text-align: center;
+}
+
+div#photo {
+    display: inline-block;
+    width: 155px;
+
+}
+
+div#photo > p {
+    display: none;
+    text-align: center;
+}
+
+div#photo:hover > p {
+    display: block;
 }
 
 /*div.first {
