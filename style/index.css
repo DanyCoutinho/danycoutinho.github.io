@@ -342,7 +342,7 @@ article.percurso > p {
 article.services {
     display: inline-block;
 
-    width: 28.3%;
+    width: 28.9%;
 
     margin: auto;
     padding: 0px 0px 0px 4%;
@@ -352,8 +352,14 @@ article.services > p {
     font: normal 1em 'Raleway', sans-serif;
     text-align: center;
 
+    max-height: 173px;
+    overflow-y: scroll;
+
     margin: auto;
     padding: 20px;
+
+    position: center;
+    object-position: center;
 }
 /*--------------------DIVs--------------------*/
 
