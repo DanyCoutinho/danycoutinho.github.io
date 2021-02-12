@@ -94,13 +94,25 @@ a {
     font-style: normal;
 
 }
-* {
-    font-family: Arial, Helvetica, sans-serif;
+/*--------------------Variáveis--------------------*/
+:root {
+    --colorbackgroundheader: linear-gradient(to bottom, #b9f8fd,#ffffff);
+    --colorbackgroundbody: linear-gradient(to bottom, #ffffff,#e8fdff);
+    --colorbackgroundmain: white;
+    --colorbackgroundfooter: linear-gradient(to bottom, #e8fdff, #ffffff);
+    --cor01: #00ffe5;
+
+    --fontepadrao: normal 1em 'Raleway', sans-serif;
 }
 
 /*--------------------CORPO DO SITE--------------------*/
+/*** {
+    margin: 0px;
+    padding: 0px;
+}*/
+
 header {
-    background-image: linear-gradient(to bottom, #b9f8fd,#ffffff);
+    background-image: var(--colorbackgroundheader);
 
     margin-left: -8px;
     margin-right: -8px;
@@ -108,23 +120,27 @@ header {
 }
 
 body {
-    background-image: linear-gradient(to bottom, #ffffff,#e8fdff);
+    background-image: var(--colorbackgroundbody);
 }
 
 main {
-    background-color: white;
+    background-color: var(--colorbackgroundmain);
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(20, 20, 137, 0.2);
+
+    /*min-width: 320px;
+    max-width: 800px;*/
+
     width: 85%;
     
-    padding: 10px 10px 10px 10px;
+    padding: 20px;
     margin: auto;
 }
 
 footer {
     text-align: center;
 
-    background-image: linear-gradient(to bottom, #e8fdff, #ffffff);
+    background-image: var(--colorbackgroundfooter);
 
     padding: 1px 0px 1px 0px;
     margin: 20px -8px -10px -8px;
@@ -303,7 +319,7 @@ nav#footermenu {
 
 article#sobremim > p {
     /*display: none;*/
-    font: normal 1em 'Raleway', sans-serif;
+    font: var(--fontepadrao);
     text-align: center;
 
     margin: auto;
@@ -314,12 +330,6 @@ article#sobremim > p {
     display: block;
     margin: auto;
 }*/
-
-img.imgcenter{
-    float: none;
-    display: block;
-    margin: auto;
-}
 
 article.percurso {
     text-align: center;
@@ -332,7 +342,7 @@ article.percurso {
 }
 
 article.percurso > p {
-    font: normal 1em 'Raleway', sans-serif;
+    font: var(--fontepadrao);
     text-align: center;
 
     margin: auto;
@@ -349,7 +359,7 @@ article.services {
 }
 
 article.services > p {
-    font: normal 1em 'Raleway', sans-serif;
+    font: var(--fontepadrao);
     text-align: center;
 
     max-height: 173px;
@@ -407,4 +417,23 @@ a:hover {
 a:active {
     color: #141489;
     background-color: #00ffe5;
+}
+
+/*--------------------IMAGES--------------------*/
+img.smallimgcenter {
+    float: none;
+    display: block;
+    margin: auto;
+
+    /*width: 100%;*/
+}
+
+img.bigimgcenter {
+    float: none;
+    display: block;
+    margin: auto;
+
+    border-radius: 50%;
+
+    /*width: 100%;*/
 }
