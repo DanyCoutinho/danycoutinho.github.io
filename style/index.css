@@ -1,63 +1,6 @@
 @charset "UTF-8";
 
-/* Selectores personalizados
-    em HTML é id    = em CSS é # (só pode um elemento)
-    em HTML é class = em CSS é . (pode vários elementos)
-    :               = pseudo-class
-    ::              = pseudo-element
-    >               = children
-*/
-
-/* Importar fontes online*/
-/* Destaque */
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-
-/* Título */
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-/* Parágrafos*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* Importar fontes da máquina */
-@font-face {
-    font-family: 'love';
-    src: url('../fonts/vallenia love.otf') format('opentype'), url('../fonts/vallenia.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-
-    /* Tipos de format() */
-    /* 
-    - opentype (otf)
-    - truetype (ttf)
-    - embedded-opentype
-    - truetype-aat (Apple Advanced Typography)
-    - svg
-    */
-}
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    /*font-family: Arial, Helvetica, sans-serif;
-    font-size: 12;*/
-    background-image: linear-gradient(to bottom, #e8fdff,#dcf2f0);
-    /*border-style: double;*/
-    /*margin: 50px 50px 50px 50px;
-    padding: 10px 10px 10px 10px;*/
-}
-
-main {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px #141489;
-    width: auto;
-    padding: 10px;
-    margin: auto;
-}
-
+/* ----------APONTAMENTOS---------- */
 /*p {
     Medidas das fontes:
 
@@ -90,26 +33,104 @@ main {
     text-indent: 1em;
 }*/
 
-p#download {
+/* Selectores personalizados
+    em HTML é id    = em CSS é # (só pode um elemento)
+    em HTML é class = em CSS é . (pode vários elementos)
+    :               = pseudo-class
+    ::              = pseudo-element
+    >               = children
+*/
+
+/*
+
+CAIXAS
+Box level
+h1 {
+        height: ;
+        width: ;
+
+        border: ;
+        
+        padding: ;
+
+        margin: ;
+
+        outline: ;
+}
+
+Inline Level
+a {
+
+}
+
+    /* Tipos de format() */
+    /* 
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg
+    */
+
+/* ----------APONTAMENTOS---------- */
+
+/* Importar fontes online*/
+/* Destaque */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/* Título */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Parágrafos*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Importar fontes da máquina */
+@font-face {
+    font-family: 'love';
+    src: url('../fonts/vallenia love.otf') format('opentype'), url('../fonts/vallenia.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--------------------CORPO DO SITE--------------------*/
+header {
+    background-image: linear-gradient(to bottom, #b9f8fd,#ffffff);
+
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 1px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #ffffff,#e8fdff);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(20, 20, 137, 0.2);
+    width: 85%;
+    
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+}
+
+footer {
     text-align: center;
-    color: #141489;
+
+    background-image: linear-gradient(to bottom, #e8fdff, #ffffff);
+
+    padding: 1px 0px 1px 0px;
+    margin: 20px -8px -10px -8px;
 }
 
-p#download:hover {
-    color: #00ffe5;
-}
-
-p#download::before {
-    content: '📥';
-}
-
-p#download::after {
-    content: '📥';
-}
-
-p#description {
-    font: normal 1em 'Raleway', sans-serif;
-}
+/*--------------------TITLES--------------------*/
 
 h1 {
     font-family: 'Parisienne', cursive;
@@ -136,42 +157,163 @@ h3 {
     font-size: 1.2em;
     font-weight: 200;
 
-    color: #214da6;
+    color: #0f8dbf;
     text-shadow: 2px 2px 4px #233bb480;
     text-align: center;
 }
 
-div.blank{
+/*--------------------MENUS--------------------*/
+
+nav#languagemenu {
+    text-align: right;
+    background-image: linear-gradient(to bottom, #0d0d0d,#141489);
+
+    margin: -8px -8px 0px -8px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+div.language {
     display: inline-block;
-    width: 33%;
+    color: #141489;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 39px;
 }
 
-div#menuprincipal {
-    display: inline-block;
-    width: 33%;
-}
+p.lang {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
 
-div.menucenter {
-    float: none;
-    display: block;
-    margin: auto;
-}
-
-button {
     background-color: #e8fdff;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.7);
     border-radius: 10px;
 }
 
-button.menucenter {
+div.language > a {
+    display: none;
+    background-color: #e8fdff;
+    color: #141489;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 14px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.7);
+    border-radius: 10px;
+}
+
+div.language:hover > a {
+    display: inline-block;
+    background-color: #e8fdff;
+    color: #141489;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 0px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.7);
+    border-radius: 10px;
+}
+
+div.language:hover > a:hover {
+    display: inline-block;
+    background-color: #00ffe5;
+    color: #141489;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 0px;
+}
+
+div.language:hover > p {
+    display: none;
+}
+
+nav#menuprincipal {
+    text-align: center;
     float: none;
     display: block;
     margin: auto;
 }
 
-div#photo {
+nav#menuprincipal > a {
     display: inline-block;
-    width: 33%;
+    background-color: #141489;
+    color: #00ffe5;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    margin-bottom: 5px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.7);
+    border-radius: 10px;
 }
+
+nav#menuprincipal > a:hover {
+    display: inline-block;
+    background-color: #00ffe5;
+    color: #141489;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+nav#footermenu {
+    text-align: center;
+
+    
+
+    margin-top: 25px;
+}
+
+/*--------------------SECTIONS--------------------*/
+
+
+
+/*--------------------ARTICLES--------------------*/
+
+article#sobremim > p {
+    /*display: none;*/
+    font: normal 1em 'Raleway', sans-serif;
+    text-align: center;
+
+    margin: auto;
+    padding: 20px;
+}
+
+/*#sobremim:hover > p {
+    display: block;
+    margin: auto;
+}*/
 
 img.imgcenter{
     float: none;
@@ -179,36 +321,70 @@ img.imgcenter{
     margin: auto;
 }
 
-div#photo > p {
-    display: none;
+article.percurso {
     text-align: center;
+    display: inline-block;
+
+    width: 42.5%;
+
+    margin: auto;
+    padding: 0px 0px 0px 5%;
 }
 
-div#photo:hover > p {
-    display: block;
+article.percurso > p {
+    font: normal 1em 'Raleway', sans-serif;
+    text-align: center;
+
+    margin: auto;
+    padding: 20px;
 }
 
-div.breve {
+article.services {
+    display: inline-block;
+
+    width: 28.3%;
+
+    margin: auto;
+    padding: 0px 0px 0px 4%;
+}
+
+article.services > p {
+    font: normal 1em 'Raleway', sans-serif;
+    text-align: center;
+
+    margin: auto;
+    padding: 20px;
+}
+/*--------------------DIVs--------------------*/
+
+
+/*--------------------PARAGRAPHS--------------------*/
+
+p#download {
+    text-align: center;
     color: #141489;
-    width: 200px;
 }
 
-div.breve:hover {
+p#download:hover {
     color: #00ffe5;
 }
 
-div.breve > li {
-    display: none;
+p#download::before {
+    content: '📥';
 }
 
-div.breve:hover > li{
-    display: block;
+p#download::after {
+    content: '📥';
 }
 
-div.contact {
-    display: inline-block;
+p.footer {
+    font-family: 'Poppins', sans-serif;
+    color: #141489;
+
+    font-weight: 500;
 }
 
+/*--------------------LINKS--------------------*/
 a {
     color: #141489;
     text-decoration: none;
@@ -226,14 +402,3 @@ a:active {
     color: #141489;
     background-color: #00ffe5;
 }
-
-/*div.first {
-    background-color: #ffffff;
-    border-style: double;
-    padding: 5px 5px 5px 10px;
-}
-
-div.second {
-    text-align: center;
-    border-style: outset;
-}*/
