@@ -250,6 +250,7 @@ header > p {
     padding-right: 10px;
     padding-left: 10px;
 
+    margin: auto;
     margin-bottom: 20px;
 
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
@@ -269,11 +270,11 @@ header > nav#menuprincipal > a {
     font-size: 0.95em;
     font-weight: 300;
 
-    min-width: 320px;
-    max-width: 1000px;
+    /*min-width: 320px;
+    max-width: 1000px;*/
 
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
 
     margin-right: 4px;
     margin-bottom: 10px;
@@ -369,7 +370,7 @@ nav#footermenu {
 
 article#sobremim > p {
     /*display: none;*/
-    font: var(--fontepadrao);
+    font: var(--fontpadrao);
     text-align: center;
     line-height: 1.4em;
 
@@ -393,7 +394,7 @@ article.percurso {
 }
 
 article.percurso > p {
-    font: var(--fontepadrao);
+    font: var(--fontpadrao);
     text-align: center;
     line-height: 1.4em;
 
@@ -411,7 +412,7 @@ article.services {
 }
 
 article.services > p {
-    font: var(--fontepadrao);
+    font: var(--fontpadrao);
     text-align: center;
     line-height: 1.4em;
     
