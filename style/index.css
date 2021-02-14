@@ -130,36 +130,187 @@ a {
     --fontbutton: 'Poppins', sans-serif;
 }
 
-/*--------------------CORPO DO SITE--------------------*/
 * {
     margin: 0px;
     padding: 0px;
 }
 
-header {
-    background-image: var(--colorbackgroundheader);
+p {
+    margin: 15px 0px;
+    text-indent: 10px;
+}
+/*--------------------LANGUAGE MENU (OUT SITE)--------------------*/
 
-    /*margin-left: -8px;
-    margin-right: -8px;*/
-    padding: 1px;
+nav#languagemenu {
+    text-align: right;
+    background-image: var(--colorbackgroundmenulang);
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
 }
 
+div.language {
+    display: inline-block;
+    color: var(--colorfontbutton);
+}
+
+p.lang {
+    font-family: var(--fontbutton);
+    font-size: 0.90em;
+
+    background-color: var(--colorbackgroundbuttonlang);
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    margin: 0px 0px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.4);
+    border-radius: 10px;
+}
+
+div.language > a {
+    display: none;
+    background-color: var(--colorbackgroundbuttonlang);
+    color: var(--colorfontbutton);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.4);
+    border-radius: 10px;
+}
+
+div.language:hover > a {
+    display: inline-block;
+    background-color: var(--colorbackgroundbuttonlang);
+    color: var(--colorfontbutton);
+
+    font-family: var(--fontbutton);
+    font-size: 0.90em;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.4);
+    border-radius: 10px;
+}
+
+div.language:hover > a:hover {
+    display: inline-block;
+    background-color: var(--colorbackgroundmenuhover);
+    color: var(--colorfontbutton);
+
+    font-family: var(--fontbutton);
+    font-size: 0.90em;
+}
+
+div.language:hover > a:active {
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.4) inset;
+}
+
+div.language:hover > p {
+    display: none;
+}
+
+/*--------------------CORPO DO SITE--------------------*/
 body {
     background-image: var(--colorbackgroundbody);
 }
 
+header {
+    background-image: var(--colorbackgroundheader);
+
+    min-height: 150px;
+
+    padding-top: 20px;
+}
+
+header > h1 {
+    font-family: var(--fontdestaque);
+    color: var(--colortitulodestaque);
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+header > p {
+    font-family: var(--fonttitulos);
+    color: var(--colortitulodestaque);
+    font-size: 1.1em;
+    text-align: center;
+
+    max-width: 1000px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    margin-bottom: 20px;
+
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+header > nav#menuprincipal {
+    text-align: center;
+    float: none;
+    display: block;
+}
+
+header > nav#menuprincipal > a {
+    background-color: var(--colorbackgroundmenuprincipal);
+    color: var(--colorfontmenu);
+
+    font-family: var(--fontbutton);
+    font-size: 0.95em;
+    font-weight: 300;
+
+    min-width: 320px;
+    max-width: 1000px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    margin-right: 4px;
+    margin-bottom: 10px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+header > nav#menuprincipal > a:hover {
+    background-color: var(--colorbackgroundmenuhover);
+    color: var(--colorfontbutton);
+
+    font-family: var(--fontbutton);
+    font-size: 0.95em;
+    font-weight: 600;
+
+    transition-duration: .5s;
+}
+
+header > nav#menuprincipal > a:active {
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.4) inset;
+
+}
+
 main {
     background-color: var(--colorbackgroundmain);
+
+    min-width: 320px;
+    max-width: 1000px;
+
+    padding: 20px;
+
+    margin: auto;
+    margin-bottom: 30px;
+
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(20, 20, 137, 0.2);
-
-    /*min-width: 320px;
-    max-width: 800px;*/
-
-    width: 85%;
-    
-    padding: 20px;
-    margin: auto;
 }
 
 footer {
@@ -167,21 +318,22 @@ footer {
 
     background-image: var(--colorbackgroundfooter);
 
-    padding: 1px 0px 1px 0px;
+    /*padding: 1px 0px 1px 0px;*/
     /*margin: 20px -8px -10px -8px;*/
 }
 
-/*--------------------TITLES--------------------*/
-
-h1 {
-    font-family: var(--fontdestaque);
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-
+footer > p {
+    font-family: var(--fontbutton);
     color: var(--colortitulodestaque);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+
+    font-weight: 500;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 0px;
 }
+
+/*--------------------TITLES--------------------*/
 
 h2 {
     font-family: var(--fonttitulos);
@@ -203,137 +355,10 @@ h3 {
     text-align: center;
 }
 
-/*--------------------MENUS--------------------*/
-
-nav#languagemenu {
-    text-align: right;
-    background-image: var(--colorbackgroundmenulang);
-
-    /*margin: -8px -8px 0px -8px;*/
-    padding-top: 12px;
-    padding-bottom: 10px;
-}
-
-div.language {
-    display: inline-block;
-    color: var(--colorfontbutton);
-
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 39px;
-}
-
-p.lang {
-    font-family: var(--fontbutton);
-    font-size: 0.90em;
-
-    background-color: var(--colorbackgroundbuttonlang);
-
-    padding-right: 25px;
-    padding-left: 25px;
-
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.4);
-    border-radius: 10px;
-}
-
-div.language > a {
-    display: none;
-    background-color: var(--colorbackgroundbuttonlang);
-    color: var(--colorfontbutton);
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.90em;
-
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-right: 14px;
-
-    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.4);
-    border-radius: 10px;
-}
-
-div.language:hover > a {
-    display: inline-block;
-    background-color: var(--colorbackgroundbuttonlang);
-    color: var(--colorfontbutton);
-
-    font-family: var(--fontbutton);
-    font-size: 0.90em;
-
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-right: 0px;
-
-    box-shadow: 2px 2px 5px 0px rgba(0, 255, 229, 0.4);
-    border-radius: 10px;
-}
-
-div.language:hover > a:hover {
-    display: inline-block;
-    background-color: var(--colorbackgroundmenuhover);
-    color: var(--colorfontbutton);
-
-    font-family: var(--fontbutton);
-    font-size: 0.90em;
-
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-right: 0px;
-}
-
-div.language:hover > p {
-    display: none;
-}
-
-nav#menuprincipal {
-    text-align: center;
-    float: none;
-    display: block;
-    margin: auto;
-}
-
-nav#menuprincipal > a {
-    display: inline-block;
-    background-color: var(--colorbackgroundmenuprincipal);
-    color: var(--colorfontmenu);
-
-    font-family: var(--fontbutton);
-    font-size: 0.95em;
-
-    padding-right: 25px;
-    padding-left: 25px;
-
-    margin-bottom: 5px;
-
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-}
-
-nav#menuprincipal > a:hover {
-    display: inline-block;
-    background-color: var(--colorbackgroundmenuhover);
-    color: var(--colorfontbutton);
-
-    font-family: var(--fontbutton);
-    font-size: 0.95em;
-
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
 nav#footermenu {
     text-align: center;
 
-    
-
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 /*--------------------SECTIONS--------------------*/
@@ -346,9 +371,10 @@ article#sobremim > p {
     /*display: none;*/
     font: var(--fontepadrao);
     text-align: center;
+    line-height: 1.4em;
 
-    margin: auto;
-    padding: 20px;
+    /*margin: auto;
+    padding: 20px;*/
 }
 
 /*#sobremim:hover > p {
@@ -360,65 +386,66 @@ article.percurso {
     text-align: center;
     display: inline-block;
 
-    width: 42.5%;
+    /*width: 42.5%;
 
     margin: auto;
-    padding: 0px 0px 0px 5%;
+    padding: 0px 0px 0px 5%;*/
 }
 
 article.percurso > p {
     font: var(--fontepadrao);
     text-align: center;
+    line-height: 1.4em;
 
-    margin: auto;
-    padding: 20px;
+    /*margin: auto;
+    padding: 20px;*/
 }
 
 article.services {
     display: inline-block;
 
-    width: 28.9%;
+    /*width: 28.9%;
 
     margin: auto;
-    padding: 0px 0px 0px 4%;
+    padding: 0px 0px 0px 4%;*/
 }
 
 article.services > p {
     font: var(--fontepadrao);
     text-align: center;
-
-    max-height: 173px;
+    line-height: 1.4em;
+    
+    /*max-height: 173px;
     overflow-y: scroll;
 
     margin: auto;
     padding: 20px;
 
     position: center;
-    object-position: center;
+    object-position: center;*/
 }
 /*--------------------DIVs--------------------*/
 
 
 /*--------------------PARAGRAPHS--------------------*/
-
 p#download {
     text-align: center;
 }
 
 p#download::before {
-    content: '📥';
+    content: '\1F4E5\00A0';
 }
 
 p#download::after {
-    content: '📥';
+    content: '\00A0\1F4E5';
 }
 
-p.footer {
+/*p.footer {
     font-family: var(--fontbutton);
     color: var(--colortitulodestaque);
 
     font-weight: 500;
-}
+}*/
 
 /*--------------------LINKS--------------------*/
 a {
@@ -448,6 +475,14 @@ img.smallimgcenter {
     /*width: 100%;*/
 }
 
+img.mediumimgcenter {
+    float: none;
+    display: block;
+    margin: auto;
+
+    /*width: 100%;*/
+}
+
 img.bigimgcenter {
     float: none;
     display: block;
@@ -456,4 +491,25 @@ img.bigimgcenter {
     border-radius: 50%;
 
     /*width: 100%;*/
+}
+
+/*--------------------VIDEOS--------------------*/
+div.video {
+    background-image: var(--colorbackgroundheader);
+
+    padding: 10px;
+    padding-bottom: 58%;
+
+    margin: 0px -20px 0px -20px;
+
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
