@@ -344,6 +344,9 @@ h2 {
     color: var(--colortituloh2);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -354,6 +357,9 @@ h3 {
     color: var(--colortituloh3);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 nav#footermenu {
@@ -454,7 +460,7 @@ a {
     text-decoration: none;
 }
 
-a:visited {
+/*a:visited {
     color: var(--colorlinkvisited);
 }
 
@@ -466,6 +472,50 @@ a:hover {
     color: var(--colorlinkactive);
     background-color: #00ffe5;
 }*/
+
+a.downloadbutton {
+    background-color: var(--colorbackgroundmenuprincipal);
+    color: var(--colorfontmenu);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+a.downloadbutton:hover {
+    background-color: var(--colorfontmenu);
+    color: var(--colorbackgroundmenuprincipal);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+    transition-duration: .5s;
+}
+
+a.downloadbutton:active {
+    background-color: var(--colorfontmenu);
+    color: var(--colorbackgroundmenuprincipal);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.4) inset;
+    border-radius: 10px;
+}
 
 /*--------------------IMAGES--------------------*/
 img.smallimgcenter {
