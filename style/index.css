@@ -96,13 +96,38 @@ a {
 }
 /*--------------------Variáveis--------------------*/
 :root {
+    /*--------------------CORES CORPO DO SITE--------------------*/
     --colorbackgroundheader: linear-gradient(to bottom, #b9f8fd,#ffffff);
     --colorbackgroundbody: linear-gradient(to bottom, #ffffff,#e8fdff);
     --colorbackgroundmain: white;
     --colorbackgroundfooter: linear-gradient(to bottom, #e8fdff, #ffffff);
-    --cor01: #00ffe5;
+    
+    /*--------------------CORES TITULOS--------------------*/
+    --colortitulodestaque: #141489;
+    --colortituloh2: #233ab4;
+    --colortituloh3: #0f8dbf;
 
-    --fontepadrao: normal 1em 'Raleway', sans-serif;
+    /*--------------------CORES MENU--------------------*/
+    --colorbackgroundmenulang: linear-gradient(to bottom, #0d0d0d,#141489);
+    --colorbackgroundbuttonlang: #e8fdff;
+    --colorbackgroundmenuprincipal: #141489;
+    --colorbackgroundmenuhover: #00ffe5;
+
+    /*--------------------CORES FONTES--------------------*/
+    --colorfontmenu: #00ffe5;
+    --colorfontbutton: #141489;
+
+    /*--------------------CORES LINKS--------------------*/
+    --colorlink: #141489;
+    --colorlinkhover: #00ffe5;
+    --colorlinkactive: #141489;
+    --colorlinkvisited: #1b65a6;
+
+    /*--------------------FONTES--------------------*/
+    --fontpadrao: normal 1em 'Raleway', sans-serif;
+    --fontdestaque: 'Parisienne', cursive;
+    --fonttitulos: 'Russo One', serif;
+    --fontbutton: 'Poppins', sans-serif;
 }
 
 /*--------------------CORPO DO SITE--------------------*/
@@ -149,31 +174,31 @@ footer {
 /*--------------------TITLES--------------------*/
 
 h1 {
-    font-family: 'Parisienne', cursive;
+    font-family: var(--fontdestaque);
     font-size: 3em;
     font-weight: bold;
     text-align: center;
 
-    color: #141489;
+    color: var(--colortitulodestaque);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    font-family: 'Russo One', serif;
+    font-family: var(--fonttitulos);
     font-size: 1.7em;
     font-weight: 400;
 
-    color: #233ab4;
+    color: var(--colortituloh2);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 h3 {
-    font-family: 'Russo One', serif;
+    font-family: var(--fonttitulos);
     font-size: 1.2em;
     font-weight: 200;
 
-    color: #0f8dbf;
+    color: var(--colortituloh3);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
@@ -182,7 +207,7 @@ h3 {
 
 nav#languagemenu {
     text-align: right;
-    background-image: linear-gradient(to bottom, #0d0d0d,#141489);
+    background-image: var(--colorbackgroundmenulang);
 
     /*margin: -8px -8px 0px -8px;*/
     padding-top: 12px;
@@ -191,7 +216,7 @@ nav#languagemenu {
 
 div.language {
     display: inline-block;
-    color: #141489;
+    color: var(--colorfontbutton);
 
     padding-top: 0px;
     padding-bottom: 0px;
@@ -203,10 +228,10 @@ div.language {
 }
 
 p.lang {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontbutton);
     font-size: 0.90em;
 
-    background-color: #e8fdff;
+    background-color: var(--colorbackgroundbuttonlang);
 
     padding-right: 25px;
     padding-left: 25px;
@@ -220,8 +245,8 @@ p.lang {
 
 div.language > a {
     display: none;
-    background-color: #e8fdff;
-    color: #141489;
+    background-color: var(--colorbackgroundbuttonlang);
+    color: var(--colorfontbutton);
 
     font-family: 'Poppins', sans-serif;
     font-size: 0.90em;
@@ -236,10 +261,10 @@ div.language > a {
 
 div.language:hover > a {
     display: inline-block;
-    background-color: #e8fdff;
-    color: #141489;
+    background-color: var(--colorbackgroundbuttonlang);
+    color: var(--colorfontbutton);
 
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontbutton);
     font-size: 0.90em;
 
     padding-right: 25px;
@@ -252,10 +277,10 @@ div.language:hover > a {
 
 div.language:hover > a:hover {
     display: inline-block;
-    background-color: #00ffe5;
-    color: #141489;
+    background-color: var(--colorbackgroundmenuhover);
+    color: var(--colorfontbutton);
 
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontbutton);
     font-size: 0.90em;
 
     padding-right: 25px;
@@ -276,10 +301,10 @@ nav#menuprincipal {
 
 nav#menuprincipal > a {
     display: inline-block;
-    background-color: #141489;
-    color: #00ffe5;
+    background-color: var(--colorbackgroundmenuprincipal);
+    color: var(--colorfontmenu);
 
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontbutton);
     font-size: 0.95em;
 
     padding-right: 25px;
@@ -293,10 +318,10 @@ nav#menuprincipal > a {
 
 nav#menuprincipal > a:hover {
     display: inline-block;
-    background-color: #00ffe5;
-    color: #141489;
+    background-color: var(--colorbackgroundmenuhover);
+    color: var(--colorfontbutton);
 
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontbutton);
     font-size: 0.95em;
 
     padding-right: 25px;
@@ -378,11 +403,6 @@ article.services > p {
 
 p#download {
     text-align: center;
-    color: #141489;
-}
-
-p#download:hover {
-    color: #00ffe5;
 }
 
 p#download::before {
@@ -394,30 +414,30 @@ p#download::after {
 }
 
 p.footer {
-    font-family: 'Poppins', sans-serif;
-    color: #141489;
+    font-family: var(--fontbutton);
+    color: var(--colortitulodestaque);
 
     font-weight: 500;
 }
 
 /*--------------------LINKS--------------------*/
 a {
-    color: #141489;
+    color: var(--colorlink);
     text-decoration: none;
 }
 
 a:visited {
-    color: #0b9ebf;
+    color: var(--colorlinkvisited);
 }
 
 a:hover {
-    color: #00ffe5;
+    color: var(--colorlinkhover);
 }
 
-a:active {
-    color: #141489;
+/*a:active {
+    color: var(--colorlinkactive);
     background-color: #00ffe5;
-}
+}*/
 
 /*--------------------IMAGES--------------------*/
 img.smallimgcenter {
