@@ -441,50 +441,66 @@ article.services > p {
 
 
 /*--------------------PARAGRAPHS--------------------*/
-p#download {
+nav#downloadmenu {
     text-align: center;
+
+    margin: 0px 210px 0px 210px;
 }
 
-p#download::before {
+nav#downloadmenu > li {
+    display: none;
+}
+
+nav#downloadmenu:hover > li.downloadlist {
+    display: block;
+}
+
+p.download {
+    background-color: var(--colorbackgroundmenuprincipal);
+    color: var(--colorfontmenu);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+p.download:hover {
+    background-color: var(--colorfontmenu);
+    color: var(--colorbackgroundmenuprincipal);
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+
+    padding-right: 25px;
+    padding-left: 25px;
+
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+    transition-duration: .5s;
+}
+
+p.download::before {
     content: '\1F4E5\00A0';
 }
 
-p#download::after {
+p.download::after {
     content: '\00A0\1F4E5';
 }
-
-/*p.footer {
-    font-family: var(--fontbutton);
-    color: var(--colortitulodestaque);
-
-    font-weight: 500;
-}*/
-
-/*--------------------LINKS--------------------*/
-a {
-    color: var(--colorlink);
-    text-decoration: none;
-}
-
-a:visited {
-    color: var(--colorlinkvisited);
-}
-
-a:hover {
-    color: var(--colorlinkhover);
-}
-
-/*a:active {
-    color: var(--colorlinkactive);
-    background-color: #00ffe5;
-}*/
 
 a.downloadbutton {
     background-color: var(--colorbackgroundmenuprincipal);
     color: var(--colorfontmenu);
 
     font-family: 'Poppins', sans-serif;
-    font-size: 0.90em;
+    font-size: 0.95em;
+    font-weight: 300;
 
     padding-right: 25px;
     padding-left: 25px;
@@ -498,7 +514,8 @@ a.downloadbutton:hover {
     color: var(--colorbackgroundmenuprincipal);
 
     font-family: 'Poppins', sans-serif;
-    font-size: 0.90em;
+    font-size: 0.95em;
+    font-weight: 500;
 
     padding-right: 25px;
     padding-left: 25px;
@@ -522,6 +539,28 @@ a.downloadbutton:active {
     box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.4) inset;
     border-radius: 10px;
 }
+
+li.downloadlist {
+    list-style-type: none;
+}
+/*--------------------LINKS--------------------*/
+a {
+    color: var(--colorlink);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--colorlinkvisited);
+}
+
+a:hover {
+    color: var(--colorlinkhover);
+}
+
+/*a:active {
+    color: var(--colorlinkactive);
+    background-color: #00ffe5;
+}*/
 
 /*--------------------IMAGES--------------------*/
 img.smallimgcenter {
