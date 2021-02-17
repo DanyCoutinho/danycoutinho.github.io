@@ -143,7 +143,7 @@ p {
 
 nav#languagemenu {
     text-align: right;
-    background-image: var(--colorbackgroundmenulang);
+    /*background-image: var(--colorbackgroundmenulang);*/
 
     padding-top: 10px;
     padding-right: 10px;
@@ -217,10 +217,16 @@ div.language:hover > p {
 /*--------------------CORPO DO SITE--------------------*/
 body {
     background-image: var(--colorbackgroundbody);
+    background-color: black;
+    background-image: url('../imgs/fundo/23322.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: scroll;*/
 }
 
 header {
-    background-image: var(--colorbackgroundheader);
+    /*background-image: var(--colorbackgroundheader);*/
 
     min-height: 150px;
 
@@ -229,7 +235,7 @@ header {
 
 header > h1 {
     font-family: var(--fontdestaque);
-    color: var(--colortitulodestaque);
+    color: var(--colorbackgroundbuttonlang);
     font-size: 3em;
     font-weight: bold;
     text-align: center;
@@ -241,7 +247,7 @@ header > h1 {
 
 header > p {
     font-family: var(--fonttitulos);
-    color: var(--colortitulodestaque);
+    color: var(--colorbackgroundmenuhover);
     font-size: 1.1em;
     text-align: center;
 
@@ -253,7 +259,7 @@ header > p {
     margin: auto;
     margin-bottom: 20px;
 
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
 }
 
 header > nav#menuprincipal {
@@ -263,8 +269,8 @@ header > nav#menuprincipal {
 }
 
 header > nav#menuprincipal > a {
-    background-color: var(--colorbackgroundmenuprincipal);
-    color: var(--colorfontmenu);
+    background-color: var(--colorbackgroundbuttonlang);
+    color: var(--colorfontbutton);
 
     font-family: var(--fontbutton);
     font-size: 0.95em;
@@ -317,7 +323,7 @@ main {
 footer {
     text-align: center;
 
-    background-image: var(--colorbackgroundfooter);
+    /*background-image: var(--colorbackgroundfooter);*/
 
     /*padding: 1px 0px 1px 0px;*/
     /*margin: 20px -8px -10px -8px;*/
@@ -325,7 +331,7 @@ footer {
 
 footer > p {
     font-family: var(--fontbutton);
-    color: var(--colortitulodestaque);
+    color: var(--colorbackgroundbuttonlang);
 
     font-weight: 500;
 
@@ -546,7 +552,7 @@ img.bigimgcenter {
 
 /*--------------------VIDEOS--------------------*/
 div.video {
-    background-image: var(--colorbackgroundheader);
+    /*background-image: var(--colorbackgroundheader);*/
 
     padding: 10px;
     padding-bottom: 58%;
