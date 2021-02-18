@@ -545,11 +545,11 @@ li.downloadlist {
 }
 /*--------------------LINKS--------------------*/
 a {
-    color: var(--colorlink);
+    /*color: var(--colorlink);*/
     text-decoration: none;
 }
 
-a:visited {
+/*a:visited {
     color: var(--colorlinkvisited);
 }
 
@@ -557,7 +557,7 @@ a:hover {
     color: var(--colorlinkhover);
 }
 
-/*a:active {
+a:active {
     color: var(--colorlinkactive);
     background-color: #00ffe5;
 }*/
