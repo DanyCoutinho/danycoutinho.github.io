@@ -136,7 +136,7 @@ a {
 }
 
 p {
-    margin: 15px 0px;
+    margin: 15px 0px 0px 0px;
     text-indent: 10px;
 }
 /*--------------------LANGUAGE MENU (OUT SITE)--------------------*/
@@ -145,9 +145,9 @@ nav#languagemenu {
     text-align: right;
     /*background-image: var(--colorbackgroundmenulang);*/
 
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    /*padding-top: 10px;*/
+    /*padding-right: 10px;*/
+    padding-bottom: 30px;
 }
 
 div.language {
@@ -228,9 +228,15 @@ body {
 header {
     /*background-image: var(--colorbackgroundheader);*/
 
-    min-height: 150px;
+    /*min-height: 150px;*/
 
-    padding-top: 20px;
+    /*padding-top: 20px;*/
+    padding-bottom: 20px;
+
+    min-width: 320px;
+    max-width: 1000px;
+
+    margin: auto;
 }
 
 header > h1 {
@@ -259,7 +265,7 @@ header > p {
     margin: auto;
     margin-bottom: 20px;
 
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
 
 header > nav#menuprincipal {
@@ -466,7 +472,8 @@ p.download {
     /*padding-right: 25px;
     padding-left: 25px;*/
 
-    margin: auto;
+    margin-bottom: 20px;
+    /*margin: auto;*/
 
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -482,7 +489,7 @@ p.download:hover {
     /*padding-right: 25px;
     padding-left: 25px;*/
 
-    margin: auto;
+    /*margin: auto;*/
 
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -506,10 +513,14 @@ a.downloadbutton {
     font-size: 0.95em;
     font-weight: 300;
 
+    min-width: 320px;
+    max-width: 1000px;
+
     padding-right: 25px;
     padding-left: 25px;
 
-    margin: auto;
+    /*margin-bottom: 10px;*/
+    /*margin: auto;*/
 
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -523,10 +534,10 @@ a.downloadbutton:hover {
     font-size: 0.95em;
     font-weight: 500;
 
-    padding-right: 25px;
+    /*padding-right: 25px;
     padding-left: 25px;
 
-    margin: auto;
+    margin: auto;*/
 
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -539,10 +550,10 @@ a.downloadbutton:active {
     color: var(--colorbackgroundmenuprincipal);
 
     font-family: 'Poppins', sans-serif;
-    font-size: 0.90em;
+    font-size: 1em;
 
-    padding-right: 25px;
-    padding-left: 25px;
+    /*padding-right: 25px;
+    padding-left: 25px;*/
 
     box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.4) inset;
     border-radius: 10px;
@@ -550,6 +561,8 @@ a.downloadbutton:active {
 
 li.downloadlist {
     list-style-type: none;
+    /*margin: auto;*/
+    
 }
 /*--------------------LINKS--------------------*/
 a {
@@ -617,3 +630,46 @@ div.video > iframe {
     width: 90%;
     height: 90%;
 }
+
+/*--------------------MOBILE--------------------*/
+@media screen and (max-width: 600px) {
+    /*main {
+        width: 100%;
+    }*/
+    p.lang {
+        display: none;
+    }
+    
+    div.language > a {
+        display: inline-block;
+    }
+
+    nav#menuprincipal a {
+        display: block;
+        float: none;
+        
+        min-width: 320px;
+        max-width: 1000px;
+    }
+
+    nav#downloadmenu p.download {
+        display: block;
+        float: none;
+        
+        min-width: 320px;
+        max-width: 1000px;
+
+        margin-bottom: 20px;
+    }
+
+    nav#downloadmenu a {
+        display: block;
+        float: none;
+        
+        min-width: 320px;
+        max-width: 1000px;
+
+        margin-top: 5px;
+    }
+}
+/*--------------------TABLETS/DESKTOPS--------------------*/
