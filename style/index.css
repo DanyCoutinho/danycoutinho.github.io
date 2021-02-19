@@ -133,7 +133,12 @@ a {
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
+
+/*html, body {
+    height: 100%;
+}*/
 
 p {
     margin: 15px 0px 0px 0px;
@@ -401,7 +406,7 @@ article#sobremim > p {
     margin: auto;
 }*/
 
-article.percurso {
+article#percursoescolar {
     text-align: center;
     display: inline-block;
 
@@ -411,7 +416,7 @@ article.percurso {
     padding: 0px 0px 0px 5%;*/
 }
 
-article.percurso > p {
+article#percursoescolar > p {
     font: var(--fontpadrao);
     text-align: center;
     line-height: 1.4em;
@@ -420,13 +425,47 @@ article.percurso > p {
     padding: 20px;*/
 }
 
-article.services {
+article#percursoprofissional {
+    text-align: center;
+    display: inline-block;
+
+    /*width: 42.5%;
+
+    margin: auto;
+    padding: 0px 0px 0px 5%;*/
+}
+
+article#percursoprofissional > p {
+    font: var(--fontpadrao);
+    text-align: center;
+    line-height: 1.4em;
+
+    /*margin: auto;
+    padding: 20px;*/
+}
+
+article#services {
     display: inline-block;
 
     /*width: 28.9%;
 
     margin: auto;
     padding: 0px 0px 0px 4%;*/
+}
+
+article#services > p {
+    font: var(--fontpadrao);
+    text-align: center;
+    line-height: 1.4em;
+    
+    /*max-height: 173px;
+    overflow-y: scroll;
+
+    margin: auto;
+    padding: 20px;
+
+    position: center;
+    object-position: center;*/
 }
 
 article.services > p {
