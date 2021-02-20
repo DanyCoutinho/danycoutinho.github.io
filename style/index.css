@@ -686,7 +686,8 @@ div.video > iframe {
     }
 
     .container {
-        display: block;
+        display: flex;
+        position: fixed;
         align-items: center;
         justify-content: center;
     }
