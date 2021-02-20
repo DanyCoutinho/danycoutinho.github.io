@@ -273,13 +273,17 @@ header > p {
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
 
-header > nav#menuprincipal {
+#checkbox-menu {
+    display: none;
+}
+
+nav#menuprincipal {
     text-align: center;
     float: none;
     display: block;
 }
 
-header > nav#menuprincipal > a {
+nav#menuprincipal > a {
     background-color: var(--colorbackgroundbuttonlang);
     color: var(--colorfontbutton);
 
@@ -300,7 +304,7 @@ header > nav#menuprincipal > a {
     border-radius: 10px;
 }
 
-header > nav#menuprincipal > a:hover {
+nav#menuprincipal > a:hover {
     background-color: var(--colorbackgroundmenuhover);
     color: var(--colorfontbutton);
 
@@ -311,7 +315,7 @@ header > nav#menuprincipal > a:hover {
     transition-duration: .5s;
 }
 
-header > nav#menuprincipal > a:active {
+nav#menuprincipal > a:active {
     box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.4) inset;
 
 }
@@ -675,20 +679,93 @@ div.video > iframe {
     /*main {
         width: 100%;
     }*/
+    nav#menuprincipal {
+        text-align: center;
+        float: none;
+        display: block;
+    }
+
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #checkbox-menu {
+        position: relative;
+        opacity: 0;
+    }
+    
+    label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+    
+    label span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background: var(--colorfontmenu);
+        transition: 0.25s ease-in-out;
+    }
+    
+    label span:nth-child(1) {
+        top: 0px;
+    }
+    
+    label span:nth-child(2) {
+        top: 8px;
+    }
+    
+    label span:nth-child(3) {
+        top: 16px;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    #checkbox-menu:checked ~ #menuprincipal {
+        display: block;
+        /*float: none;*/
+        
+        min-width: 320px;
+        max-width: 1000px;
+    }
+
+    #checkbox-menu:checked ~ #menuprincipal > a {
+        display: block;
+        float: none;
+        
+        min-width: 320px;
+        max-width: 1000px;
+    }
+
+    nav#menuprincipal {
+        display: none;
+    }
+/*---------------------------------------------------------------------*/
     p.lang {
         display: none;
     }
     
     div.language > a {
         display: inline-block;
-    }
-
-    nav#menuprincipal a {
-        display: block;
-        float: none;
-        
-        min-width: 320px;
-        max-width: 1000px;
     }
 
     nav#downloadmenu p.download {
