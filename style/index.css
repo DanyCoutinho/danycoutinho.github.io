@@ -221,12 +221,15 @@ div.language:hover > p {
 
 /*--------------------CORPO DO SITE--------------------*/
 body {
-    background-image: var(--colorbackgroundbody);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    background: url(../imgs/fundo/23322.jpg) no-repeat center center/cover;
+    /*background-image: var(--colorbackgroundbody);
     background-color: black;
     background-image: url('../imgs/fundo/23322.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     /*background-attachment: scroll;*/
 }
 
@@ -386,7 +389,7 @@ h3 {
 nav#footermenu {
     text-align: center;
 
-    /*margin-top: 25px;*/
+    margin-top: 25px;
 }
 
 /*--------------------SECTIONS--------------------*/
